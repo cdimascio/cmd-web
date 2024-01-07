@@ -3,6 +3,8 @@ import path from "path";
 import config from "./content/config.json";
 import * as types from "./internal/gatsby/types";
 
+const siteAddress = new URL("https://cdimascio.dev");
+
 export default {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
@@ -16,6 +18,16 @@ export default {
     disqusShortname: config.disqusShortname,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-s3",
+      options: {
+        bucketName: "cdimascio-dev-web",
+        protocol: siteAddress.protocol.slice(0, -1),
+        hostname: siteAddress.hostname,
+        region: "us-east-1",
+        acl: null,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {

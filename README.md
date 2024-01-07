@@ -1,3 +1,12 @@
+## cmd-blog
+
+Build and deploy the blog
+
+```
+nvm node 18 # or greater
+npm run build && AWS_PROFILE=cdimascio-aws gatsby-plugin-s3 deploy
+```
+
 <h1 align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/alxshelepenok/gatsby-starter-lumen/blob/master/.github/logo-light.png" width="140">
