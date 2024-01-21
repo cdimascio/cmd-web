@@ -20,6 +20,9 @@ In the realm of conversational systems, Agent architecture serves as the bluepri
 
 Collectively, these components influence agent responses, fostering engaging interactions with users. In contemporary Agent architecture, Large Language Models (LLMs) play a key role, introducing elements of reasoning and understanding that were previously unattainable.
 
+
+![llm agent tool selection](/media/bert-classifier.jpeg)
+
 ### Tool Selection
 
 This article explores the concept of tools selection, a process that entails understanding a user's intent and choosing the tool most suitable to address their request. While LLMs are an ideal choice tool selection, the inherent costs and considerable latencies (currently) tied to LLM interactions, prompt an exploration of alternatives.
