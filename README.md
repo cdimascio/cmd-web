@@ -7,6 +7,13 @@ nvm node 18 # or greater
 npm run build && AWS_PROFILE=cdimascio-aws gatsby-plugin-s3 deploy
 ```
 
+### Manual deploy
+```shell
+npm run build
+# copy all files from public to s3 cdimascio-dev-web
+# delete current files, then add newly built files
+```
+
 <h1 align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/alxshelepenok/gatsby-starter-lumen/blob/master/.github/logo-light.png" width="140">

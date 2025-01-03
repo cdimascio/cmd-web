@@ -3,7 +3,7 @@ import path from "path";
 import config from "./content/config.json";
 import * as types from "./internal/gatsby/types";
 
-const siteAddress = new URL("https://cdimascio.dev");
+const siteAddress = new URL("https://carmine.wtf");
 
 export default {
   pathPrefix: config.pathPrefix,
